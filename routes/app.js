@@ -11,7 +11,10 @@ router.get('/', function (req, res, next) {
 //     }
 // );
 //User routes.
-router.route('/user')
+function isAuthenticated(role) {
+
+}
+router.route('admin/user')
     .get(function (req,res) {
         userController.getAllUser(req,res);
     })
